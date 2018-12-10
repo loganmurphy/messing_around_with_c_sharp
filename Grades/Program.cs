@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GradeBook
+namespace Grades
 {
     public class MainClass
     {
@@ -8,22 +8,12 @@ namespace GradeBook
 
         {
             GradeBook book = new GradeBook();
+
             book.AddGrade(100);
+            book.AddGrade(95);
+            book.AddGrade(60);
 
-            foreach( int grade in book.grades) {
-                Console.WriteLine(grade);
-            }
-
-
-            GradeBook book2 = new GradeBook();
-            book2.AddGrade(95);
-            book2.AddGrade(60);
-
-            foreach (int grade in book2.grades)
-            {
-                Console.WriteLine(grade);
-            }
-
+            GradeStatistics stats = book.ComputeStatistics();
         }
     }
 }

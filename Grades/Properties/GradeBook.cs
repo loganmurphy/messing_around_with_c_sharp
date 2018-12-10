@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GradeBook
+namespace Grades
 {
     public class GradeBook
     {
@@ -9,6 +9,10 @@ namespace GradeBook
         public GradeBook()
         {
             grades = new List<float>();
+        }
+
+        public GradeStatistics ComputeStatistics() {
+            return new GradeStatistics();
         }
 
         public void AddGrade(float grade)
