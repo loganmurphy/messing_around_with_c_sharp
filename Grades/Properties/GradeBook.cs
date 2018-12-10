@@ -16,7 +16,7 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        List<float> grades;
+        public List<float> grades;
 
     }
 }

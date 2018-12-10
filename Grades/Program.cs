@@ -8,8 +8,21 @@ namespace GradeBook
 
         {
             GradeBook book = new GradeBook();
-            book.AddGrade(1);
-            Console.WriteLine("Grade Added");
+            book.AddGrade(100);
+
+            foreach( int grade in book.grades) {
+                Console.WriteLine(grade);
+            }
+
+
+            GradeBook book2 = new GradeBook();
+            book2.AddGrade(95);
+            book2.AddGrade(60);
+
+            foreach (int grade in book2.grades)
+            {
+                Console.WriteLine(grade);
+            }
 
         }
     }
