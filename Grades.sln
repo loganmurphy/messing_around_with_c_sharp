@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "Grades\Grades.csproj", "{3813507F-D50F-4BA6-B6DD-FAF00E03A43A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades.Tests", "Grades.Tests\Grades.Tests.csproj", "{E712B018-CB13-492C-86C1-14E1243D3193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{3813507F-D50F-4BA6-B6DD-FAF00E03A43A}.Debug|x86.Build.0 = Debug|x86
 		{3813507F-D50F-4BA6-B6DD-FAF00E03A43A}.Release|x86.ActiveCfg = Release|x86
 		{3813507F-D50F-4BA6-B6DD-FAF00E03A43A}.Release|x86.Build.0 = Release|x86
+		{E712B018-CB13-492C-86C1-14E1243D3193}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E712B018-CB13-492C-86C1-14E1243D3193}.Debug|x86.Build.0 = Debug|Any CPU
+		{E712B018-CB13-492C-86C1-14E1243D3193}.Release|x86.ActiveCfg = Release|Any CPU
+		{E712B018-CB13-492C-86C1-14E1243D3193}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
