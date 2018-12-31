@@ -42,12 +42,13 @@ namespace Grades.Tests.Types
             GradeBook book1 = new GradeBook();
             GradeBook book2 = book1;
 
-            GiveBookAName(book2);
-            Assert.AreEqual("A GradeBook", book1.Name);
+            GiveBookAName(ref book2);
+            Assert.AreEqual("A GradeBook", book2.Name);
         }
 
-        void GiveBookAName(GradeBook book)
+        void GiveBookAName(ref GradeBook book)
         {
+            book = new GradeBook();
             book.Name = "A GradeBook";
         }
 
@@ -55,12 +56,12 @@ namespace Grades.Tests.Types
         public void ValueTypesPassByValue()
         {
             int x = 46;
-            IncrementNumber(x);
+            IncrementNumber(ref x);
 
-            Assert.AreEqual(46, x);
+            Assert.AreEqual(47, x);
         }
 
-        public void IncrementNumber(int number)
+        public void IncrementNumber(ref int number)
         {
             number++;
         }
