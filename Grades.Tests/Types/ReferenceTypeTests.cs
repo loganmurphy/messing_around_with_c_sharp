@@ -42,11 +42,11 @@ namespace Grades.Tests.Types
             GradeBook book1 = new GradeBook();
             GradeBook book2 = book1;
 
-            GiveBookAName(ref book2);
+            GiveBookAName(out book2);
             Assert.AreEqual("A GradeBook", book2.Name);
         }
 
-        void GiveBookAName(ref GradeBook book)
+        void GiveBookAName(out GradeBook book)
         {
             book = new GradeBook();
             book.Name = "A GradeBook";
