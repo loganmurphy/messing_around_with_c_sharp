@@ -65,5 +65,39 @@ namespace Grades.Tests.Types
         {
             number++;
         }
+
+        [Test()]
+        public void AddDaysToDateTime()
+        {
+            DateTime date = new DateTime(2019, 1, 1);
+            date = date.AddDays(1);
+
+            Assert.AreEqual(2, date.Day);
+        }
+
+        [Test()]
+        public void UppercaseString()
+        {
+            string name = "logan";
+            name = name.ToUpper();
+
+            Assert.AreEqual("LOGAN", name);
+        }
+
+        [Test()]
+        public void UsingArrays()
+        {
+            float[] grades;
+            grades = new float[3];
+
+            AddGrades(grades);
+
+            Assert.AreEqual(89.1f, grades[1]);
+        }
+
+        private void AddGrades(float[] grades)
+        {
+            grades[1] = 89.1f;
+        }
     }
 }

@@ -32,8 +32,21 @@ namespace Grades
             grades.Add(grade);
         }
 
-        public string Name;
-        public List<float> grades;
+        public string Name
+        {
 
+            get => _name;
+
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+            }
+        }
+
+        public List<float> grades;
+        private string _name;
     }
 }

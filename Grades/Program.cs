@@ -9,15 +9,27 @@ namespace Grades
         {
 
             GradeBook book = new GradeBook();
-
+            book.Name = "My grade book";
             book.AddGrade(100);
             book.AddGrade(95);
             book.AddGrade(60);
 
             GradeStatistics stats = book.ComputeStatistics();
+            Console.WriteLine(book.Name);
 
-            Console.WriteLine("Avg: {0}, High: {1}, Low: {2}", stats.AverageGrade, 
-                          stats.HighestGrade, stats.LowestGrade);
+            WriteResult("Average", stats.AverageGrade);
+            WriteResult("Highest", (int)stats.HighestGrade);
+            WriteResult("Lowest", stats.LowestGrade);
+        }
+
+        static void WriteResult(string description, int result)
+        {
+            Console.WriteLine($"{description}: {result:F2}");
+        }
+
+        static void WriteResult(string description, float result)
+        {
+            Console.WriteLine($"{description}: {result:F2}");
         }
     }
 }
