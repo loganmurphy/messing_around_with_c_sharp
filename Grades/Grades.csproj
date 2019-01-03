@@ -38,6 +38,7 @@
     <Compile Include="Properties\GradeBook.cs" />
     <Compile Include="Properties\GradeStatistics.cs" />
     <Compile Include="NameChangedDelegate.cs" />
+    <Compile Include="NameChangedEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
