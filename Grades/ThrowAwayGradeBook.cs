@@ -1,9 +1,9 @@
 ﻿using System;
 namespace Grades
 {
-    public class ThrowAwayGradeBook : GradeBook
+    public class ThrowAwayGradeBook : GradeBook 
     {
-        public GradeStatistics ComputeStatistics()
+        public override GradeStatistics ComputeStatistics()
         {
             Console.WriteLine("ThrowAwayGradeBook: ComputeStatistics");
             float lowest = float.MaxValue;
